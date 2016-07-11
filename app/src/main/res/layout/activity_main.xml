@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.epicodus.forum.MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/backGroundImageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#85a9fd"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Category"
+        android:id="@+id/addCategoryButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#e0ffff" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newCategoryEditText"
+        android:layout_above="@+id/addCategoryButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="7dp"
+        android:hint="New Category Title"
+        android:textAlignment="center"
+        android:background="#817c7b7b" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/categoryListView"
+        android:layout_above="@+id/newCategoryEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="172dp"
+        android:background="#00ffffff" />
+
+</RelativeLayout>
